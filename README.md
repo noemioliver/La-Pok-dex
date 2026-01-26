@@ -1,4 +1,14 @@
-⚡ Pokémon en Python
+# ❤️ Definir clases pokédex
+Programación Orientada a Objetos (POO)
 
-Este proyecto es una implementación básica de Pokémon usando Programación Orientada a Objetos (POO) en Python.
-Permite crear Pokémon, hacerlos atacar, recibir daño y curarse, además de usar movimientos.
+**Clase Pokemon**
+- Nombre del Pokémon
+- Tipo (fuego, agua, eléctrico, etc.)
+- Vida 
+- Ataque
+- Defensa
+- Atacar a otro Pokémon
+- Recibir daño y reducir su vida
+- Curarse sin superar la vida máxima
+
+
