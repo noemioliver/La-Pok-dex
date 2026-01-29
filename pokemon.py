@@ -22,14 +22,22 @@
 # Se resta a la vida actual el daño recibido
 
 class Pokemon:
-    def __init__(self, nombre, tipo, movimientos):
+    def __init__(self, 
+                nombre: str, 
+                tipo: str, 
+                vida: int, 
+                fuerza: int, 
+                defensa: int, 
+                velocidad: int, 
+                movimientos: list):
         self.nombre = nombre
         self.tipo = tipo
-        self.vida = 10
-        self.fuerza = 20
-        self.defensa = 18
-        self.velocidad = 100
+        self.vida = vida
+        self.fuerza = fuerza
+        self.defensa = defensa
+        self.velocidad = velocidad
         self.movimientos = movimientos
+
 
 def ejecutar_movimiento(self, otro_pokemon):
     movimiento = self.movimientos[0]
