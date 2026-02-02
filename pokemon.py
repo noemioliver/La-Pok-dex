@@ -38,14 +38,17 @@ class Pokemon:
         self.velocidad = velocidad
         self.movimientos = movimientos
 
+    def ejecutar_movimiento(self, otro_pokemon):
+        movimiento = self.movimientos[0]
+        print(self.nombre, "usa", movimiento.nombre)
 
-def ejecutar_movimiento(self, otro_pokemon):
-    movimiento = self.movimientos[0]
-    print(self.nombre, "usa", movimiento)
-    dano = self.fuerza - otro_pokemon.defensa
-    if dano < 0:
-         dano = 0
+        dano = self.fuerza - otro_pokemon.defensa
+        if dano < 0:
+            dano = 0
 
-def recibir_dano(self, dano):
-        self.vida = self.vida - dano
+        otro_pokemon.recibir_dano(dano)
+        return dano
+
+    def recibir_dano(self, dano):
+        self.vida -= dano
         print(self.nombre, "tiene", self.vida, "de vida")
