@@ -14,6 +14,21 @@
 from pokemon import Pokemon
 from combate import Combate
 from movimientos import Movimiento
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def root():
+    return {"message": "Hola mundo"}
+
+@app.get("/pokemon")
+def obtener_usuarios():
+    return [{"nombre":"pokemon molon"}]
+
+@app.post("/pokemon")
+def crear_pokemon():
+    return {"status": "pokemon creado"}
 
 placaje = Movimiento("Placaje", 10)
 encanto = Movimiento("Encanto", 5)
