@@ -1,11 +1,7 @@
-from combate import Combate
-from pokemon import Pokemon
-from movimientos import Movimiento
 
-
-from pokemon import Pokemon
-from movimientos import Movimiento
-from combate import Combate
+from clases.pokemon import Pokemon
+from clases.movimientos import Movimiento
+from clases.combate import Combate
 
 def test_atacar_quita_vida():
     movimiento = Movimiento("Ataque", 5)

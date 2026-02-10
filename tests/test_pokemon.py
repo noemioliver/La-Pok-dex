@@ -1,5 +1,5 @@
-from pokemon import Pokemon
-from movimientos import Movimiento
+from clases.pokemon import Pokemon
+from clases.movimientos import Movimiento
 
 
 def test_recibir_dano_baja_vida():

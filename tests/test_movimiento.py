@@ -1,4 +1,4 @@
-from movimientos import Movimiento
+from clases.movimientos import Movimiento
 
 def test_crear_movimiento():
     movimiento = Movimiento("Placaje", 10)
